@@ -10,7 +10,7 @@ with open(archivo, 'r', encoding='utf-8') as file:
 
 # Eliminar la segunda línea (índice 1)
 if len(content) > 1:
-    del content[1]
+    del content[1:5]
 
 # Escribir el contenido modificado de nuevo
 with open(archivo, 'w', encoding='utf-8') as file:
@@ -22,3 +22,4 @@ with open(archivo, 'w', encoding='utf-8') as file:
 with open(archivo, 'a', encoding='utf-8') as file:
     file.write("\nESTAMOS APRENDIENDO A ADICIONAR LÍNEAS DESDE PYTHON.")
     print("Estamos aprendiendo a añadir líneas de texto con Python.")
+
